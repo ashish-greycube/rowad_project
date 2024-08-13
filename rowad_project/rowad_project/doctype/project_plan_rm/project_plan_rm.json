@@ -1,0 +1,201 @@
+{
+ "actions": [],
+ "autoname": "field:project_name",
+ "creation": "2024-08-12 13:19:39.459894",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_details_section",
+  "project_name",
+  "contractor_name",
+  "description_of_competition",
+  "column_break_soxd",
+  "client_name",
+  "location",
+  "expected_project_start_date",
+  "project_timeline_section",
+  "first_timeline",
+  "notes_of_pt",
+  "column_break_mgbj",
+  "attachment",
+  "second_procurement_plan_section",
+  "notes_of_pp",
+  "third_quality_plan_section",
+  "notes_of_tq",
+  "fourth_risk_management_section",
+  "risk_managemnet",
+  "notes_of_fr",
+  "column_break_vokw",
+  "fifth_communication_plan_between_section",
+  "notes_of_fc",
+  "column_break_gkqu",
+  "sixth_communication_plan_section",
+  "notes_of_sc",
+  "column_break_twqe"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name"
+  },
+  {
+   "fieldname": "column_break_soxd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contractor_name",
+   "fieldtype": "Data",
+   "label": "Contractor Name"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "description_of_competition",
+   "fieldtype": "Small Text",
+   "label": "Description of Competition"
+  },
+  {
+   "fieldname": "expected_project_start_date",
+   "fieldtype": "Date",
+   "label": "Expected Project Start Date"
+  },
+  {
+   "fieldname": "project_timeline_section",
+   "fieldtype": "Section Break",
+   "label": "Project Timeline"
+  },
+  {
+   "fieldname": "first_timeline",
+   "fieldtype": "Select",
+   "label": "First Timeline",
+   "options": "\nNo Attachment\nAttachment"
+  },
+  {
+   "fieldname": "notes_of_pt",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "fieldname": "column_break_mgbj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "second_procurement_plan_section",
+   "fieldtype": "Section Break",
+   "label": "Second: Procurement Plan  "
+  },
+  {
+   "fieldname": "notes_of_pp",
+   "fieldtype": "Data",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "third_quality_plan_section",
+   "fieldtype": "Section Break",
+   "label": "Third: Quality plan"
+  },
+  {
+   "fieldname": "notes_of_tq",
+   "fieldtype": "Data",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "risk_managemnet",
+   "fieldtype": "Select",
+   "label": "Risk Managemnet",
+   "options": "\nSmall\nMedium\nHigh"
+  },
+  {
+   "fieldname": "notes_of_fr",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "column_break_vokw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fifth_communication_plan_between_section",
+   "fieldtype": "Section Break",
+   "label": "Fifth: Communication Plan Between"
+  },
+  {
+   "fieldname": "notes_of_fc",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "column_break_gkqu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sixth_communication_plan_section",
+   "fieldtype": "Section Break",
+   "label": "Sixth: Communication Plan"
+  },
+  {
+   "fieldname": "notes_of_sc",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "column_break_twqe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fourth_risk_management_section",
+   "fieldtype": "Section Break",
+   "label": "Fourth: Risk Management"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Project Plan Closure Form RM",
+   "link_fieldname": "project_name"
+  }
+ ],
+ "modified": "2024-08-13 07:18:37.240492",
+ "modified_by": "Administrator",
+ "module": "Rowad Project",
+ "name": "Project Plan RM",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

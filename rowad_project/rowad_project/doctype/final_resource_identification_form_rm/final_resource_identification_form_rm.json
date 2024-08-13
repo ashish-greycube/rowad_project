@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:project_name",
+ "creation": "2024-08-12 12:54:19.548198",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "contractor_name",
+  "description_of_competition",
+  "column_break_zzja",
+  "client_name",
+  "location",
+  "expected_project_start_date",
+  "list_of_final_resources",
+  "amended_from",
+  "section_break_qmen",
+  "first_site_preparation",
+  "second_human_resource",
+  "third_equipment",
+  "fourth_raw_material",
+  "fifth_cars"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name"
+  },
+  {
+   "fieldname": "contractor_name",
+   "fieldtype": "Data",
+   "label": "Contractor Name"
+  },
+  {
+   "fieldname": "column_break_zzja",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "description_of_competition",
+   "fieldtype": "Small Text",
+   "label": "Description of Competition"
+  },
+  {
+   "fieldname": "expected_project_start_date",
+   "fieldtype": "Date",
+   "label": "Expected Project Start Date"
+  },
+  {
+   "fieldname": "list_of_final_resources",
+   "fieldtype": "Data",
+   "label": "List of final resources estimated from the study of competition and planning documents"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Final Resource Identification Form RM",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_qmen",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "first_site_preparation",
+   "fieldtype": "Table",
+   "label": "First: Site Preparation",
+   "options": "Final Resource Details RM"
+  },
+  {
+   "fieldname": "second_human_resource",
+   "fieldtype": "Table",
+   "label": "Second: Human Resource",
+   "options": "Final Resource Details RM"
+  },
+  {
+   "fieldname": "third_equipment",
+   "fieldtype": "Table",
+   "label": "Third: Equipment",
+   "options": "Final Resource Details RM"
+  },
+  {
+   "fieldname": "fourth_raw_material",
+   "fieldtype": "Table",
+   "label": "Fourth: raw Material",
+   "options": "Final Resource Details RM"
+  },
+  {
+   "fieldname": "fifth_cars",
+   "fieldtype": "Table",
+   "label": "Fifth: Cars",
+   "options": "Final Resource Details RM"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Project Plan RM",
+   "link_fieldname": "project_name"
+  }
+ ],
+ "modified": "2024-08-13 07:16:29.420933",
+ "modified_by": "Administrator",
+ "module": "Rowad Project",
+ "name": "Final Resource Identification Form RM",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

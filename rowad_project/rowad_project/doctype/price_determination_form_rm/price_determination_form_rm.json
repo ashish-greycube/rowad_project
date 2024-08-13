@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-12 09:54:58.726316",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "contractor_name",
+  "number_of_participants",
+  "value_of_competition_documents",
+  "bid_value",
+  "description",
+  "column_break_onuk",
+  "client_name",
+  "location",
+  "manual_reference",
+  "competition_status",
+  "application_deadline",
+  "project_duration",
+  "cost_details_section",
+  "value",
+  "total_price",
+  "column_break_icgp",
+  "total_costs",
+  "vat_15",
+  "column_break_aaqk",
+  "expected_profit",
+  "total_price_with_vat"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name"
+  },
+  {
+   "fieldname": "manual_reference",
+   "fieldtype": "Data",
+   "label": "Manual Reference"
+  },
+  {
+   "fieldname": "application_deadline",
+   "fieldtype": "Date",
+   "label": "Application Deadline"
+  },
+  {
+   "fieldname": "contractor_name",
+   "fieldtype": "Data",
+   "label": "Contractor Name"
+  },
+  {
+   "fieldname": "value_of_competition_documents",
+   "fieldtype": "Data",
+   "label": "Value of Competition Documents"
+  },
+  {
+   "fieldname": "project_duration",
+   "fieldtype": "Data",
+   "label": "Project Duration"
+  },
+  {
+   "fieldname": "competition_status",
+   "fieldtype": "Select",
+   "label": "Competition status",
+   "options": "\nOpen\nWon\nLost"
+  },
+  {
+   "fieldname": "column_break_onuk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_details_section",
+   "fieldtype": "Section Break",
+   "label": "Cost Details"
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Currency",
+   "label": "Value"
+  },
+  {
+   "fieldname": "total_costs",
+   "fieldtype": "Currency",
+   "label": "Total Costs"
+  },
+  {
+   "fieldname": "expected_profit",
+   "fieldtype": "Currency",
+   "label": "Expected Profit"
+  },
+  {
+   "fieldname": "column_break_icgp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_aaqk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "label": "Total Price"
+  },
+  {
+   "fieldname": "vat_15",
+   "fieldtype": "Currency",
+   "label": "VAT 15%"
+  },
+  {
+   "fieldname": "total_price_with_vat",
+   "fieldtype": "Currency",
+   "label": "Total Price (with VAT)"
+  },
+  {
+   "fieldname": "number_of_participants",
+   "fieldtype": "Int",
+   "label": "Number of participants in the competition",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "bid_value",
+   "fieldtype": "Data",
+   "label": "Bid value"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project Name",
+   "options": "Initial Evaluation RM",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Final Resource Identification Form RM",
+   "link_fieldname": "project_name"
+  }
+ ],
+ "modified": "2024-08-13 09:46:39.232224",
+ "modified_by": "Administrator",
+ "module": "Rowad Project",
+ "name": "Price Determination Form RM",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

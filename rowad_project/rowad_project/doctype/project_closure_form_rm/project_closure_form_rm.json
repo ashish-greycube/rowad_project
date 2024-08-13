@@ -1,0 +1,192 @@
+{
+ "actions": [],
+ "autoname": "field:project_name",
+ "creation": "2024-08-13 07:00:39.260350",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "contractor_name",
+  "description_of_competition",
+  "column_break_gmig",
+  "client_name",
+  "location",
+  "expected_project_start_date",
+  "closing_date",
+  "first_the_completion_of_all_work_section",
+  "completion_of_all_work",
+  "column_break_dtls",
+  "description_of_fc",
+  "second_customer_requirements_section",
+  "customer_requirements",
+  "column_break_lmub",
+  "description_of_sc",
+  "third_closing_all_claims_section",
+  "closing_all_claims",
+  "column_break_escw",
+  "description_of_tc",
+  "fourth_lessons_learned_section",
+  "description",
+  "fifth_project_section",
+  "project",
+  "column_break_qhsf",
+  "description_of_fp"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "contractor_name",
+   "fieldtype": "Data",
+   "label": "Contractor Name"
+  },
+  {
+   "fieldname": "description_of_competition",
+   "fieldtype": "Small Text",
+   "label": "Description of Competition"
+  },
+  {
+   "fieldname": "column_break_gmig",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "expected_project_start_date",
+   "fieldtype": "Date",
+   "label": "Expected Project Start Date"
+  },
+  {
+   "fieldname": "closing_date",
+   "fieldtype": "Date",
+   "label": "Closing Date"
+  },
+  {
+   "fieldname": "first_the_completion_of_all_work_section",
+   "fieldtype": "Section Break",
+   "label": "First: The completion of all work"
+  },
+  {
+   "fieldname": "completion_of_all_work",
+   "fieldtype": "Select",
+   "label": "Completion of all work",
+   "options": "\nCompleted\nIncomplete"
+  },
+  {
+   "fieldname": "column_break_dtls",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description_of_fc",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "second_customer_requirements_section",
+   "fieldtype": "Section Break",
+   "label": "Second: Customer Requirements"
+  },
+  {
+   "fieldname": "customer_requirements",
+   "fieldtype": "Select",
+   "label": "Customer Requirements",
+   "options": "\nCompleted\nIncomplete in accordance with the contract"
+  },
+  {
+   "fieldname": "column_break_lmub",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description_of_sc",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "third_closing_all_claims_section",
+   "fieldtype": "Section Break",
+   "label": "Third: Closing all claims"
+  },
+  {
+   "fieldname": "closing_all_claims",
+   "fieldtype": "Select",
+   "label": " Closing All Claims",
+   "options": "\nClosed\nEnclosed"
+  },
+  {
+   "fieldname": "column_break_escw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description_of_tc",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "fourth_lessons_learned_section",
+   "fieldtype": "Section Break",
+   "label": "Fourth: Lessons Learned"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "fifth_project_section",
+   "fieldtype": "Section Break",
+   "label": "Fifth: Project"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Select",
+   "label": " Project",
+   "options": "\nClosed\nEnclosed"
+  },
+  {
+   "fieldname": "column_break_qhsf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description_of_fp",
+   "fieldtype": "Data",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-13 07:18:31.139610",
+ "modified_by": "Administrator",
+ "module": "Rowad Project",
+ "name": "Project Closure Form RM",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

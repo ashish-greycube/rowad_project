@@ -1,0 +1,393 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-12 08:23:38.681928",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_a72l",
+  "rm_project_name",
+  "description",
+  "column_break_eolz",
+  "location",
+  "client_name",
+  "contractor_name",
+  "amended_from",
+  "evaluation_determinants_section",
+  "completing_competition_documents",
+  "specifications_and_requirements",
+  "description_of_ed",
+  "column_break_gwpi",
+  "lists_and_quantities",
+  "drawing",
+  "other",
+  "section_break_ooey",
+  "location_of_ed",
+  "description_of_ed2",
+  "column_break_hjoq",
+  "location_provided",
+  "notes",
+  "section_break_leol",
+  "interview_with_the_client_or_his_representative",
+  "description_of_ed3",
+  "column_break_oxhs",
+  "section_break_rzex",
+  "first_nature_of_the_project",
+  "description_of_ee",
+  "column_break_qrft",
+  "evaluation_elements_section",
+  "second_project_type",
+  "operation",
+  "maintenance",
+  "construction",
+  "description_of_ee1",
+  "column_break_jbbu",
+  "third_type_of_activity",
+  "civil",
+  "electricity",
+  "mechanics",
+  "section_break_lgfk",
+  "forth",
+  "description_of_ee2",
+  "column_break_corl",
+  "fifth",
+  "section_break_kkhs",
+  "sixth",
+  "description_of_ee3",
+  "column_break_xpcw",
+  "seventh",
+  "description_of_ee4",
+  "board_of_directors_section",
+  "board_of_dirctors_approval",
+  "notes_of_bd",
+  "column_break_lcyp"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_a72l",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Initial Evaluation RM",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "contractor_name",
+   "fieldtype": "Data",
+   "label": "Contractor Name"
+  },
+  {
+   "fieldname": "column_break_eolz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "evaluation_determinants_section",
+   "fieldtype": "Section Break",
+   "label": "Evaluation Determinants"
+  },
+  {
+   "fieldname": "completing_competition_documents",
+   "fieldtype": "Select",
+   "label": "Completing competition documents",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "specifications_and_requirements",
+   "fieldtype": "Select",
+   "label": "Specifications and Requirements",
+   "options": "\nThere is\nThere isn't any"
+  },
+  {
+   "fieldname": "lists_and_quantities",
+   "fieldtype": "Select",
+   "label": "Lists and quantities",
+   "options": "\nThere is\nThere isn't any"
+  },
+  {
+   "fieldname": "drawing",
+   "fieldtype": "Select",
+   "label": "Drawing",
+   "options": "\nThere is\nThere isn't any"
+  },
+  {
+   "fieldname": "other",
+   "fieldtype": "Select",
+   "label": "Other",
+   "options": "\nThere is\nThere isn't any"
+  },
+  {
+   "fieldname": "column_break_gwpi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description_of_ed",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_ooey",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "location_of_ed",
+   "fieldtype": "Select",
+   "label": "Location",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "description_of_ed2",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Data",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "column_break_hjoq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_leol",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "interview_with_the_client_or_his_representative",
+   "fieldtype": "Select",
+   "label": "Interview with the client or his representative",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "description_of_ed3",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_oxhs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "evaluation_elements_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "first_nature_of_the_project",
+   "fieldtype": "Select",
+   "label": "First - Nature of the project",
+   "options": "\nAppropriate\nInappropriate"
+  },
+  {
+   "fieldname": "second_project_type",
+   "fieldtype": "HTML",
+   "label": "Second - Project Type",
+   "options": "<label class=\"control-label\" style=\"padding-right: 0px;\">Second - Project Type</label>"
+  },
+  {
+   "default": "0",
+   "fieldname": "operation",
+   "fieldtype": "Check",
+   "label": "Operation"
+  },
+  {
+   "fieldname": "column_break_jbbu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "maintenance",
+   "fieldtype": "Check",
+   "label": "Maintenance"
+  },
+  {
+   "default": "0",
+   "fieldname": "construction",
+   "fieldtype": "Check",
+   "label": "Construction"
+  },
+  {
+   "fieldname": "section_break_rzex",
+   "fieldtype": "Section Break",
+   "label": "Evaluation elements"
+  },
+  {
+   "fieldname": "third_type_of_activity",
+   "fieldtype": "HTML",
+   "label": "Third - Type of activity",
+   "options": "<label class=\"control-label\" style=\"padding-right: 0px;\">Third - Type of activity</label>"
+  },
+  {
+   "default": "0",
+   "fieldname": "civil",
+   "fieldtype": "Check",
+   "label": "Civil"
+  },
+  {
+   "default": "0",
+   "fieldname": "electricity",
+   "fieldtype": "Check",
+   "label": "Electricity"
+  },
+  {
+   "default": "0",
+   "fieldname": "mechanics",
+   "fieldtype": "Check",
+   "label": "Mechanics"
+  },
+  {
+   "fieldname": "section_break_lgfk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_corl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description_of_ee2",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "description_of_ee1",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "description_of_ee",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_qrft",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_kkhs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sixth",
+   "fieldtype": "Select",
+   "label": "Sixth - The contractor meets the requirements of the owner/customer",
+   "options": "\nComplete\nIncomplete"
+  },
+  {
+   "fieldname": "forth",
+   "fieldtype": "Select",
+   "label": "Forth - Preliminary turnover assessment",
+   "options": "\nSmall\nMedium\nBig"
+  },
+  {
+   "fieldname": "fifth",
+   "fieldtype": "Select",
+   "label": "Fifth - Initial risk assessment",
+   "options": "\nSmall\nMedium\nBig"
+  },
+  {
+   "fieldname": "description_of_ee3",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_xpcw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "seventh",
+   "fieldtype": "Select",
+   "label": "Seventh - Potential for logistical support",
+   "options": "\nEasy\nMedium\nHard"
+  },
+  {
+   "fieldname": "description_of_ee4",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "board_of_directors_section",
+   "fieldtype": "Section Break",
+   "label": "Board of Directors"
+  },
+  {
+   "fieldname": "board_of_dirctors_approval",
+   "fieldtype": "Select",
+   "label": "Board of Dirctors Approval",
+   "options": "\nInitial approval and completion of the study\nFinal rejection and referral of the project for termination"
+  },
+  {
+   "fieldname": "notes_of_bd",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "column_break_lcyp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description of competition"
+  },
+  {
+   "fieldname": "location_provided",
+   "fieldtype": "Small Text",
+   "label": "Location provided"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "rm_project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Name",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Price Determination Form RM",
+   "link_fieldname": "project_name"
+  }
+ ],
+ "modified": "2024-08-13 10:08:19.233614",
+ "modified_by": "Administrator",
+ "module": "Rowad Project",
+ "name": "Initial Evaluation RM",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

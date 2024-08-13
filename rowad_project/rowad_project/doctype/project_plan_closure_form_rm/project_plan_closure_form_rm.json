@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "autoname": "field:project_name",
+ "creation": "2024-08-13 06:46:01.540366",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "contractor_name",
+  "description_of_competition",
+  "column_break_mgje",
+  "client_name",
+  "location",
+  "expected_project_start_date",
+  "closing_date",
+  "first_closure_timeline_section",
+  "closure_timeline",
+  "column_break_cdou",
+  "notes",
+  "section_break_ajwl",
+  "second_list_of_resources_required_for_closure",
+  "section_break_ggxg",
+  "third_list_of_equipment_needed_for_shutdown",
+  "fourth_other_needs_section",
+  "notes_of_fo",
+  "section_break_dpyl",
+  "ceo_decision"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_mgje",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name"
+  },
+  {
+   "fieldname": "contractor_name",
+   "fieldtype": "Data",
+   "label": "Contractor Name"
+  },
+  {
+   "fieldname": "description_of_competition",
+   "fieldtype": "Small Text",
+   "label": "Description of Competition"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "expected_project_start_date",
+   "fieldtype": "Date",
+   "label": "Expected Project Start Date"
+  },
+  {
+   "fieldname": "closing_date",
+   "fieldtype": "Date",
+   "label": "Closing Date"
+  },
+  {
+   "fieldname": "first_closure_timeline_section",
+   "fieldtype": "Section Break",
+   "label": "First: Closure Timeline"
+  },
+  {
+   "fieldname": "closure_timeline",
+   "fieldtype": "Select",
+   "label": " Closure Timeline",
+   "options": "\nAttachment\nNo attachment"
+  },
+  {
+   "fieldname": "column_break_cdou",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Data",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "section_break_ajwl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "second_list_of_resources_required_for_closure",
+   "fieldtype": "Table",
+   "label": "Second: List of Resources Required For Closure",
+   "options": "Final Resource Details RM"
+  },
+  {
+   "fieldname": "third_list_of_equipment_needed_for_shutdown",
+   "fieldtype": "Table",
+   "label": "Third: List of Equipment Needed For Shutdown",
+   "options": "Final Resource Details RM"
+  },
+  {
+   "fieldname": "section_break_ggxg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fourth_other_needs_section",
+   "fieldtype": "Section Break",
+   "label": "Fourth: Other needs"
+  },
+  {
+   "fieldname": "notes_of_fo",
+   "fieldtype": "Data",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "section_break_dpyl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ceo_decision",
+   "fieldtype": "Select",
+   "label": "CEO Decision",
+   "options": "Accepted/rejected are-examined"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Project Closure Form RM",
+   "link_fieldname": "project_name"
+  }
+ ],
+ "modified": "2024-08-13 07:18:33.918591",
+ "modified_by": "Administrator",
+ "module": "Rowad Project",
+ "name": "Project Plan Closure Form RM",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

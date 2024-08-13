@@ -1,0 +1,236 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:project_name",
+ "creation": "2024-08-12 15:36:01.888126",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "contractor_name",
+  "description_of_competition",
+  "column_break_gwqt",
+  "client_name",
+  "location",
+  "expected_project_start_date",
+  "amended_from",
+  "first_productivity_flow_section",
+  "first_productivity_flow",
+  "column_break_igeg",
+  "description_of_fp",
+  "second_quality_section",
+  "quality",
+  "column_break_icrq",
+  "decription_of_sq",
+  "third_costs_section",
+  "costs",
+  "column_break_tcrh",
+  "cost_restriction",
+  "fourth_evaluation_of_expenses_section",
+  "expenses",
+  "column_break_krev",
+  "description_of_ep",
+  "fifth_customer_notes_section",
+  "customer_notes",
+  "column_break_phvy",
+  "description_of_fc",
+  "sixth_claims_section",
+  "claims",
+  "column_break_oflk",
+  "description_of_sc"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name"
+  },
+  {
+   "fieldname": "contractor_name",
+   "fieldtype": "Data",
+   "label": "Contractor Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Weekly Follow Up RM",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "description_of_competition",
+   "fieldtype": "Small Text",
+   "label": "Description of Competition"
+  },
+  {
+   "fieldname": "column_break_gwqt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expected_project_start_date",
+   "fieldtype": "Data",
+   "label": "Expected Project Start Date"
+  },
+  {
+   "fieldname": "first_productivity_flow_section",
+   "fieldtype": "Section Break",
+   "label": "First: Productivity Flow"
+  },
+  {
+   "fieldname": "first_productivity_flow",
+   "fieldtype": "Select",
+   "label": "First Productivity Flow",
+   "options": "\nIn\nOut of range"
+  },
+  {
+   "fieldname": "quality",
+   "fieldtype": "Select",
+   "label": "Quality",
+   "options": "\nMatch\nNon-Match"
+  },
+  {
+   "fieldname": "description_of_fp",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "decription_of_sq",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "third_costs_section",
+   "fieldtype": "Section Break",
+   "label": "Third: Costs "
+  },
+  {
+   "fieldname": "costs",
+   "fieldtype": "Select",
+   "label": "Costs",
+   "options": "According to the budget\nOut of budget"
+  },
+  {
+   "fieldname": "cost_restriction",
+   "fieldtype": "Select",
+   "label": "Cost Restriction",
+   "options": "\nNeed\nDon't Need Reduction"
+  },
+  {
+   "fieldname": "fourth_evaluation_of_expenses_section",
+   "fieldtype": "Section Break",
+   "label": "Fourth: Evaluation of Expenses"
+  },
+  {
+   "fieldname": "expenses",
+   "fieldtype": "Select",
+   "label": "Expenses",
+   "options": "\nSmall\nMedium\nHigh"
+  },
+  {
+   "fieldname": "description_of_ep",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "fifth_customer_notes_section",
+   "fieldtype": "Section Break",
+   "label": "Fifth: Customer Notes"
+  },
+  {
+   "fieldname": "customer_notes",
+   "fieldtype": "Select",
+   "label": "Customer Notes",
+   "options": "\nThere is\nThere isn't any"
+  },
+  {
+   "fieldname": "description_of_fc",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "sixth_claims_section",
+   "fieldtype": "Section Break",
+   "label": "Sixth: Claims"
+  },
+  {
+   "fieldname": "claims",
+   "fieldtype": "Select",
+   "label": "Claims",
+   "options": "\nThere is\nThere isn't any"
+  },
+  {
+   "fieldname": "description_of_sc",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_igeg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_icrq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tcrh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_krev",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_phvy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_oflk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "second_quality_section",
+   "fieldtype": "Section Break",
+   "label": "Second: Quality "
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-13 07:18:49.940617",
+ "modified_by": "Administrator",
+ "module": "Rowad Project",
+ "name": "Weekly Follow Up RM",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
