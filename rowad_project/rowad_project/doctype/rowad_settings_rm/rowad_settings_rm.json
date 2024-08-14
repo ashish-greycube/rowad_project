@@ -16,13 +16,15 @@
   {
    "fieldname": "vat_percentage",
    "fieldtype": "Percent",
-   "label": "VAT %"
+   "in_list_view": 1,
+   "label": "VAT %",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-08-14 08:22:50.838046",
+ "modified": "2024-08-14 13:56:47.837441",
  "modified_by": "Administrator",
  "module": "Rowad Project",
  "name": "Rowad Settings RM",
