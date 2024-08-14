@@ -19,7 +19,7 @@ def execute(filters=None):
 def get_columns(filters):
 	columns = [
 		{
-			"fieldname": "project_name",
+			"fieldname": "rm_project_name",
 			"fieldtype": "Link",
 			"label": _("Project Name"),
 			"options": "Price Determination Form RM",
@@ -34,9 +34,9 @@ def get_columns(filters):
 			"width": 200,
 		},
 		{
-			"fieldname": "client_name",
+			"fieldname": "customer_name",
 			"fieldtype": "Data",
-			"label": _("Client Name"),
+			"label": _("Customer Name"),
 			"width": 200,
 		},
 		{
@@ -70,12 +70,6 @@ def get_columns(filters):
 			"width": 150,
 		},
 		{
-			"fieldname": "sort_by_lowest_price",
-			"fieldtype": "Data",
-			"label": _("Sort by lowest price"),
-			"width": 150,
-		},
-		{
 			"fieldname": "bid_value",
 			"fieldtype": "Data",
 			"label": _("Bid value"),
@@ -96,8 +90,8 @@ def get_data(filters):
 	conditions = get_conditions(filters)
 	print(conditions, '---conditions')
 
-	data = frappe.db.sql(""" SELECT project_name,  client_name, contractor_name,
-					  project_duration,competition_status,number_of_participants,bid_value
+	data = frappe.db.sql(""" SELECT rm_project_name,  customer_name, contractor_name,
+					  project_duration,competition_status,number_of_participants,bid_value,activity
 					  FROM `tabPrice Determination Form RM`
 					  WHERE {0} """.format(conditions), filters, as_dict=1)
 

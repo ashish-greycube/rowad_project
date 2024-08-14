@@ -1,0 +1,157 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"1zAkOhXL2x\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Rowad Management</span>\",\"col\":12}},{\"id\":\"lzMTfuJvde\",\"type\":\"card\",\"data\":{\"card_name\":\"Doctype\",\"col\":4}},{\"id\":\"ar74xL_z5y\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"id\":\"Bshj-_nz1o\",\"type\":\"card\",\"data\":{\"card_name\":\"Report\",\"col\":4}}]",
+ "creation": "2024-08-13 14:04:44.005517",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "projects",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Rowad Management",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Doctype",
+   "link_count": 8,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Initial Evaluation",
+   "link_count": 0,
+   "link_to": "Initial Evaluation RM",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Price Determination Form",
+   "link_count": 0,
+   "link_to": "Price Determination Form RM",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Final Resource Identification Form",
+   "link_count": 0,
+   "link_to": "Final Resource Identification Form RM",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Project Plan",
+   "link_count": 0,
+   "link_to": "Project Plan RM",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Project Plan Closure Form",
+   "link_count": 0,
+   "link_to": "Project Plan Closure Form RM",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Project Closure Form",
+   "link_count": 0,
+   "link_to": "Project Closure Form RM",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Weekly Follow Up",
+   "link_count": 0,
+   "link_to": "Weekly Follow Up RM",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Activity",
+   "link_count": 0,
+   "link_to": "Activity",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Settings",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Rowad Settings",
+   "link_count": 0,
+   "link_to": "Rowad Settings RM",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Report",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Etimad",
+   "link_count": 0,
+   "link_to": "Etimad",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-08-14 09:50:59.105462",
+ "modified_by": "Administrator",
+ "module": "Rowad Project",
+ "name": "Rowad Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [],
+ "title": "Rowad Management"
+}

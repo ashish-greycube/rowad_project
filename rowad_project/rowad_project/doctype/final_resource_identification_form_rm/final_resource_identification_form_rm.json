@@ -1,16 +1,17 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:project_name",
+ "autoname": "FRI-.######",
  "creation": "2024-08-12 12:54:19.548198",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "project_name",
+  "rm_project_name",
   "contractor_name",
+  "customer_name",
   "description_of_competition",
   "column_break_zzja",
-  "client_name",
+  "price_determination_form_reference",
   "location",
   "expected_project_start_date",
   "list_of_final_resources",
@@ -24,19 +25,7 @@
  ],
  "fields": [
   {
-   "fieldname": "project_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Project Name",
-   "reqd": 1,
-   "unique": 1
-  },
-  {
-   "fieldname": "client_name",
-   "fieldtype": "Data",
-   "label": "Client Name"
-  },
-  {
+   "fetch_from": "price_determination_form_reference.contractor_name",
    "fieldname": "contractor_name",
    "fieldtype": "Data",
    "label": "Contractor Name"
@@ -46,6 +35,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "price_determination_form_reference.location",
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location"
@@ -108,6 +98,27 @@
    "fieldtype": "Table",
    "label": "Fifth: Cars",
    "options": "Final Resource Details RM"
+  },
+  {
+   "fetch_from": "price_determination_form_reference.rm_project_name",
+   "fieldname": "rm_project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Project Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "price_determination_form_reference",
+   "fieldtype": "Link",
+   "label": "Price Determination Form Reference",
+   "options": "Price Determination Form RM"
+  },
+  {
+   "fetch_from": "price_determination_form_reference.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -115,14 +126,14 @@
  "links": [
   {
    "link_doctype": "Project Plan RM",
-   "link_fieldname": "project_name"
+   "link_fieldname": "final_resource_identification_form_reference"
   }
  ],
- "modified": "2024-08-13 07:16:29.420933",
+ "modified": "2024-08-14 07:38:25.505154",
  "modified_by": "Administrator",
  "module": "Rowad Project",
  "name": "Final Resource Identification Form RM",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

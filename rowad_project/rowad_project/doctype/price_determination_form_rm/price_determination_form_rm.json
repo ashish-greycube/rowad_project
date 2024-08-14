@@ -1,18 +1,22 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "PDF-.######",
  "creation": "2024-08-12 09:54:58.726316",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "project_name",
+  "rm_project_name",
   "contractor_name",
   "number_of_participants",
   "value_of_competition_documents",
   "bid_value",
   "description",
+  "reason_for_excluding_the_offer__if_any",
   "column_break_onuk",
-  "client_name",
+  "initial_evaluation_reference",
+  "activity",
+  "customer_name",
   "location",
   "manual_reference",
   "competition_status",
@@ -35,14 +39,10 @@
    "label": "Description"
   },
   {
+   "fetch_from": "initial_evaluation_reference.location",
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location"
-  },
-  {
-   "fieldname": "client_name",
-   "fieldtype": "Data",
-   "label": "Client Name"
   },
   {
    "fieldname": "manual_reference",
@@ -55,6 +55,7 @@
    "label": "Application Deadline"
   },
   {
+   "fetch_from": "initial_evaluation_reference.contractor_name",
    "fieldname": "contractor_name",
    "fieldtype": "Data",
    "label": "Contractor Name"
@@ -130,30 +131,54 @@
   },
   {
    "fieldname": "bid_value",
-   "fieldtype": "Data",
+   "fieldtype": "Currency",
    "label": "Bid value"
   },
   {
-   "fieldname": "project_name",
+   "fieldname": "activity",
    "fieldtype": "Link",
+   "label": "Activity",
+   "options": "Activity"
+  },
+  {
+   "fetch_from": "initial_evaluation_reference.rm_project_name",
+   "fieldname": "rm_project_name",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Project Name",
-   "options": "Initial Evaluation RM",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "reason_for_excluding_the_offer__if_any",
+   "fieldtype": "Data",
+   "label": "Reason for excluding the offer ( if any )"
+  },
+  {
+   "fieldname": "initial_evaluation_reference",
+   "fieldtype": "Link",
+   "label": "Initial Evaluation Reference",
+   "options": "Initial Evaluation RM"
+  },
+  {
+   "fetch_from": "initial_evaluation_reference.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [
   {
    "link_doctype": "Final Resource Identification Form RM",
-   "link_fieldname": "project_name"
+   "link_fieldname": "price_determination_form_reference"
   }
  ],
- "modified": "2024-08-13 09:46:39.232224",
+ "modified": "2024-08-14 07:37:11.729829",
  "modified_by": "Administrator",
  "module": "Rowad Project",
  "name": "Price Determination Form RM",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,15 +1,16 @@
 {
  "actions": [],
- "autoname": "field:project_name",
+ "autoname": "PCF-.######",
  "creation": "2024-08-13 07:00:39.260350",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "project_name",
+  "rm_project_name",
   "contractor_name",
   "description_of_competition",
   "column_break_gmig",
-  "client_name",
+  "project_plan_closure_form_reference",
+  "customer_name",
   "location",
   "expected_project_start_date",
   "closing_date",
@@ -34,17 +35,13 @@
  ],
  "fields": [
   {
-   "fieldname": "project_name",
-   "fieldtype": "Data",
-   "label": "Project Name",
-   "unique": 1
-  },
-  {
+   "fetch_from": "project_plan_closure_form_reference.contractor_name",
    "fieldname": "contractor_name",
    "fieldtype": "Data",
    "label": "Contractor Name"
   },
   {
+   "fetch_from": "project_plan_closure_form_reference.description_of_competition",
    "fieldname": "description_of_competition",
    "fieldtype": "Small Text",
    "label": "Description of Competition"
@@ -54,21 +51,19 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "client_name",
-   "fieldtype": "Data",
-   "label": "Client Name"
-  },
-  {
+   "fetch_from": "project_plan_closure_form_reference.location",
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location"
   },
   {
+   "fetch_from": "project_plan_closure_form_reference.expected_project_start_date",
    "fieldname": "expected_project_start_date",
    "fieldtype": "Date",
    "label": "Expected Project Start Date"
   },
   {
+   "fetch_from": "project_plan_closure_form_reference.closing_date",
    "fieldname": "closing_date",
    "fieldtype": "Date",
    "label": "Closing Date"
@@ -162,15 +157,34 @@
    "fieldname": "description_of_fp",
    "fieldtype": "Data",
    "label": "Description"
+  },
+  {
+   "fetch_from": "project_plan_closure_form_reference.rm_project_name",
+   "fieldname": "rm_project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "project_plan_closure_form_reference",
+   "fieldtype": "Link",
+   "label": "Project Plan Closure Form Reference",
+   "options": "Project Plan Closure Form RM"
+  },
+  {
+   "fetch_from": "project_plan_closure_form_reference.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-13 07:18:31.139610",
+ "modified": "2024-08-14 07:30:47.135741",
  "modified_by": "Administrator",
  "module": "Rowad Project",
  "name": "Project Closure Form RM",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,20 +1,22 @@
 {
  "actions": [],
- "autoname": "field:project_name",
+ "autoname": "PPCF-.######",
  "creation": "2024-08-13 06:46:01.540366",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "project_name",
+  "rm_project_name",
   "contractor_name",
   "description_of_competition",
   "column_break_mgje",
-  "client_name",
+  "project_plan_reference",
+  "customer_name",
   "location",
   "expected_project_start_date",
   "closing_date",
   "first_closure_timeline_section",
   "closure_timeline",
+  "attachment",
   "column_break_cdou",
   "notes",
   "section_break_ajwl",
@@ -28,36 +30,29 @@
  ],
  "fields": [
   {
-   "fieldname": "project_name",
-   "fieldtype": "Data",
-   "label": "Project Name",
-   "unique": 1
-  },
-  {
    "fieldname": "column_break_mgje",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "client_name",
-   "fieldtype": "Data",
-   "label": "Client Name"
-  },
-  {
+   "fetch_from": "project_plan_reference.contractor_name",
    "fieldname": "contractor_name",
    "fieldtype": "Data",
    "label": "Contractor Name"
   },
   {
+   "fetch_from": "project_plan_reference.description_of_competition",
    "fieldname": "description_of_competition",
    "fieldtype": "Small Text",
    "label": "Description of Competition"
   },
   {
+   "fetch_from": "project_plan_reference.location",
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location"
   },
   {
+   "fetch_from": "project_plan_reference.expected_project_start_date",
    "fieldname": "expected_project_start_date",
    "fieldtype": "Date",
    "label": "Expected Project Start Date"
@@ -73,10 +68,11 @@
    "label": "First: Closure Timeline"
   },
   {
+   "fetch_from": "project_plan_reference.first_timeline",
    "fieldname": "closure_timeline",
    "fieldtype": "Select",
    "label": " Closure Timeline",
-   "options": "\nAttachment\nNo attachment"
+   "options": "\nAttachment\nNo Attachment"
   },
   {
    "fieldname": "column_break_cdou",
@@ -126,20 +122,46 @@
    "fieldtype": "Select",
    "label": "CEO Decision",
    "options": "Accepted/rejected are-examined"
+  },
+  {
+   "fetch_from": "project_plan_reference.rm_project_name",
+   "fieldname": "rm_project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "project_plan_reference",
+   "fieldtype": "Link",
+   "label": "Project Plan Reference",
+   "options": "Project Plan RM"
+  },
+  {
+   "fetch_from": "project_plan_reference.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "depends_on": "eval:doc.closure_timeline==\"Attachment\"",
+   "fetch_from": "project_plan_reference.attachment",
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [
   {
    "link_doctype": "Project Closure Form RM",
-   "link_fieldname": "project_name"
+   "link_fieldname": "project_plan_closure_form_reference"
   }
  ],
- "modified": "2024-08-13 07:18:33.918591",
+ "modified": "2024-08-14 09:37:51.533216",
  "modified_by": "Administrator",
  "module": "Rowad Project",
  "name": "Project Plan Closure Form RM",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

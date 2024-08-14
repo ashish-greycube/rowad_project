@@ -1,18 +1,20 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:project_name",
+ "autoname": "WFU-.######",
  "creation": "2024-08-12 15:36:01.888126",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "project_name",
-  "contractor_name",
-  "description_of_competition",
+  "customer",
+  "customer_name",
+  "custom_description_of_competition",
   "column_break_gwqt",
-  "client_name",
-  "location",
-  "expected_project_start_date",
+  "project_reference",
+  "custom_contractor_name",
+  "custom_location",
+  "expected_start_date",
   "amended_from",
   "first_productivity_flow_section",
   "first_productivity_flow",
@@ -41,20 +43,11 @@
  ],
  "fields": [
   {
+   "fetch_from": "project_reference.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
    "label": "Project Name",
    "unique": 1
-  },
-  {
-   "fieldname": "client_name",
-   "fieldtype": "Data",
-   "label": "Client Name"
-  },
-  {
-   "fieldname": "contractor_name",
-   "fieldtype": "Data",
-   "label": "Contractor Name"
   },
   {
    "fieldname": "amended_from",
@@ -67,23 +60,8 @@
    "search_index": 1
   },
   {
-   "fieldname": "location",
-   "fieldtype": "Data",
-   "label": "Location"
-  },
-  {
-   "fieldname": "description_of_competition",
-   "fieldtype": "Small Text",
-   "label": "Description of Competition"
-  },
-  {
    "fieldname": "column_break_gwqt",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "expected_project_start_date",
-   "fieldtype": "Data",
-   "label": "Expected Project Start Date"
   },
   {
    "fieldname": "first_productivity_flow_section",
@@ -205,16 +183,59 @@
    "fieldname": "second_quality_section",
    "fieldtype": "Section Break",
    "label": "Second: Quality "
+  },
+  {
+   "fetch_from": "project_reference.expected_start_date",
+   "fieldname": "expected_start_date",
+   "fieldtype": "Date",
+   "label": "Expected Start Date"
+  },
+  {
+   "fetch_from": "project_reference.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "project_reference.custom_description_of_competition",
+   "fieldname": "custom_description_of_competition",
+   "fieldtype": "Small Text",
+   "label": "Description of Competition"
+  },
+  {
+   "fetch_from": "project_reference.custom_contractor_name",
+   "fieldname": "custom_contractor_name",
+   "fieldtype": "Data",
+   "label": "Contractor Name"
+  },
+  {
+   "fetch_from": "project_reference.custom_location",
+   "fieldname": "custom_location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "project_reference",
+   "fieldtype": "Link",
+   "label": "Project Reference",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-13 07:18:49.940617",
+ "modified": "2024-08-14 09:18:28.545789",
  "modified_by": "Administrator",
  "module": "Rowad Project",
  "name": "Weekly Follow Up RM",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

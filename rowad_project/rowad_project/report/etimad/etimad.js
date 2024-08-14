@@ -8,6 +8,7 @@ frappe.query_reports["Etimad"] = {
 			"label":__("Competition status"),
 			"fieldtype": "Select",
             "options": ['Open','Won','Lost'],
+			"default":"Open"
 		}
 	]
 };

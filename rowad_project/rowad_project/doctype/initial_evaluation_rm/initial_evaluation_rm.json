@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "IE-.######",
  "creation": "2024-08-12 08:23:38.681928",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -10,7 +11,7 @@
   "description",
   "column_break_eolz",
   "location",
-  "client_name",
+  "customer_name",
   "contractor_name",
   "amended_from",
   "evaluation_determinants_section",
@@ -346,17 +347,17 @@
    "label": "Location provided"
   },
   {
-   "fieldname": "client_name",
-   "fieldtype": "Data",
-   "label": "Customer Name"
-  },
-  {
    "fieldname": "rm_project_name",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Project Name",
    "reqd": 1,
    "unique": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -364,13 +365,14 @@
  "links": [
   {
    "link_doctype": "Price Determination Form RM",
-   "link_fieldname": "project_name"
+   "link_fieldname": "initial_evaluation_reference"
   }
  ],
- "modified": "2024-08-13 10:08:19.233614",
+ "modified": "2024-08-14 07:36:25.586174",
  "modified_by": "Administrator",
  "module": "Rowad Project",
  "name": "Initial Evaluation RM",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
