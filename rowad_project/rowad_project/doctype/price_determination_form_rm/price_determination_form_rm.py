@@ -8,7 +8,7 @@ from frappe.model.document import Document
 
 
 class PriceDeterminationFormRM(Document):
-	def validate(self):
+	def on_submit(self):
 		if self.competition_status == "Won":
 			project_doc = frappe.new_doc("Project")
 			project_doc.project_name = self.rm_project_name
