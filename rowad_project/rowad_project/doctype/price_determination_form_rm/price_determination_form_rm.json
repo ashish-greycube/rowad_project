@@ -30,7 +30,8 @@
   "vat_15",
   "column_break_aaqk",
   "expected_profit",
-  "total_price_with_vat"
+  "total_price_with_vat",
+  "amended_from"
  ],
  "fields": [
   {
@@ -124,6 +125,7 @@
    "label": "Total Price (with VAT)"
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "number_of_participants",
    "fieldtype": "Int",
    "label": "Number of participants in the competition",
@@ -150,6 +152,7 @@
    "unique": 1
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "reason_for_excluding_the_offer__if_any",
    "fieldtype": "Data",
    "label": "Reason for excluding the offer ( if any )"
@@ -165,16 +168,27 @@
    "fieldname": "customer_name",
    "fieldtype": "Data",
    "label": "Customer Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Price Determination Form RM",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [
   {
    "link_doctype": "Final Resource Identification Form RM",
    "link_fieldname": "price_determination_form_reference"
   }
  ],
- "modified": "2024-08-14 07:37:11.729829",
+ "modified": "2024-08-28 10:18:15.276555",
  "modified_by": "Administrator",
  "module": "Rowad Project",
  "name": "Price Determination Form RM",

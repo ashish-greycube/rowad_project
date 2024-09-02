@@ -8,9 +8,11 @@
  "field_order": [
   "rm_project_name",
   "contractor_name",
+  "customer",
   "customer_name",
   "description_of_competition",
   "column_break_zzja",
+  "project_reference",
   "price_determination_form_reference",
   "location",
   "expected_project_start_date",
@@ -25,7 +27,7 @@
  ],
  "fields": [
   {
-   "fetch_from": "price_determination_form_reference.contractor_name",
+   "fetch_from": "project_reference.custom_contractor_name",
    "fieldname": "contractor_name",
    "fieldtype": "Data",
    "label": "Contractor Name"
@@ -35,17 +37,19 @@
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "price_determination_form_reference.location",
+   "fetch_from": "project_reference.custom_location",
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location"
   },
   {
+   "fetch_from": "project_reference.custom_description_of_competition",
    "fieldname": "description_of_competition",
    "fieldtype": "Small Text",
    "label": "Description of Competition"
   },
   {
+   "fetch_from": "project_reference.expected_start_date",
    "fieldname": "expected_project_start_date",
    "fieldtype": "Date",
    "label": "Expected Project Start Date"
@@ -100,7 +104,7 @@
    "options": "Final Resource Details RM"
   },
   {
-   "fetch_from": "price_determination_form_reference.rm_project_name",
+   "fetch_from": "project_reference.project_name",
    "fieldname": "rm_project_name",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -110,15 +114,27 @@
   },
   {
    "fieldname": "price_determination_form_reference",
-   "fieldtype": "Link",
-   "label": "Price Determination Form Reference",
-   "options": "Price Determination Form RM"
+   "fieldtype": "Data",
+   "label": "Price Determination Form Reference"
   },
   {
-   "fetch_from": "price_determination_form_reference.customer_name",
+   "fetch_from": "customer.customer_name",
    "fieldname": "customer_name",
    "fieldtype": "Data",
    "label": "Customer Name"
+  },
+  {
+   "fieldname": "project_reference",
+   "fieldtype": "Link",
+   "label": "Project Reference",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "project_reference.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -129,7 +145,7 @@
    "link_fieldname": "final_resource_identification_form_reference"
   }
  ],
- "modified": "2024-08-14 07:38:25.505154",
+ "modified": "2024-09-02 11:17:28.786178",
  "modified_by": "Administrator",
  "module": "Rowad Project",
  "name": "Final Resource Identification Form RM",

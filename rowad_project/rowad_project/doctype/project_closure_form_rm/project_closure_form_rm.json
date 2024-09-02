@@ -5,11 +5,13 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "project_reference",
   "rm_project_name",
   "contractor_name",
   "description_of_competition",
   "column_break_gmig",
   "project_plan_closure_form_reference",
+  "customer",
   "customer_name",
   "location",
   "expected_project_start_date",
@@ -35,13 +37,13 @@
  ],
  "fields": [
   {
-   "fetch_from": "project_plan_closure_form_reference.contractor_name",
+   "fetch_from": "project_reference.custom_contractor_name",
    "fieldname": "contractor_name",
    "fieldtype": "Data",
    "label": "Contractor Name"
   },
   {
-   "fetch_from": "project_plan_closure_form_reference.description_of_competition",
+   "fetch_from": "project_reference.custom_description_of_competition",
    "fieldname": "description_of_competition",
    "fieldtype": "Small Text",
    "label": "Description of Competition"
@@ -51,13 +53,13 @@
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "project_plan_closure_form_reference.location",
+   "fetch_from": "project_reference.custom_location",
    "fieldname": "location",
    "fieldtype": "Data",
    "label": "Location"
   },
   {
-   "fetch_from": "project_plan_closure_form_reference.expected_project_start_date",
+   "fetch_from": "project_reference.expected_start_date",
    "fieldname": "expected_project_start_date",
    "fieldtype": "Date",
    "label": "Expected Project Start Date"
@@ -159,7 +161,7 @@
    "label": "Description"
   },
   {
-   "fetch_from": "project_plan_closure_form_reference.rm_project_name",
+   "fetch_from": "project_reference.project_name",
    "fieldname": "rm_project_name",
    "fieldtype": "Data",
    "label": "Project Name",
@@ -172,15 +174,28 @@
    "options": "Project Plan Closure Form RM"
   },
   {
-   "fetch_from": "project_plan_closure_form_reference.customer_name",
+   "fetch_from": "customer.customer_name",
    "fieldname": "customer_name",
    "fieldtype": "Data",
    "label": "Customer Name"
+  },
+  {
+   "fieldname": "project_reference",
+   "fieldtype": "Link",
+   "label": "Project Reference",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "project_reference.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-14 07:30:47.135741",
+ "modified": "2024-09-02 11:35:27.567566",
  "modified_by": "Administrator",
  "module": "Rowad Project",
  "name": "Project Closure Form RM",
