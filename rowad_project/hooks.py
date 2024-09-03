@@ -83,7 +83,7 @@ app_license = "mit"
 
 # before_app_install = "rowad_project.utils.before_app_install"
 # after_app_install = "rowad_project.utils.after_app_install"
-
+after_migrate= "rowad_project.api.after_migrate"
 # Integration Cleanup
 # -------------------
 # To clean up dependencies/integrations with other apps
