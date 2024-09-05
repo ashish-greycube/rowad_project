@@ -19,7 +19,8 @@ def update_dashboard_link_for_core_doctype(doctype,link_doctype,link_fieldname,g
 
 
 def after_migrate():
-    update_dashboard_link_for_core_doctype(doctype='Project',link_doctype='Final Resource Identification Form RM',link_fieldname='rm_project_name',group="Rowad")	
-    update_dashboard_link_for_core_doctype(doctype='Project',link_doctype='Project Plan RM',link_fieldname='rm_project_name',group="Rowad")	
-    update_dashboard_link_for_core_doctype(doctype='Project',link_doctype='Project Plan Closure Form RM',link_fieldname='rm_project_name',group="Rowad")	
-    update_dashboard_link_for_core_doctype(doctype='Project',link_doctype='Project Closure Form RM',link_fieldname='rm_project_name',group="Rowad")	
+    update_dashboard_link_for_core_doctype(doctype='Project',link_doctype='Weekly Follow Up RM',link_fieldname='project_reference',group="Rowad")	
+    update_dashboard_link_for_core_doctype(doctype='Project',link_doctype='Final Resource Identification Form RM',link_fieldname='project_reference',group="Rowad")	
+    update_dashboard_link_for_core_doctype(doctype='Project',link_doctype='Project Plan RM',link_fieldname='project_reference',group="Rowad")	
+    update_dashboard_link_for_core_doctype(doctype='Project',link_doctype='Project Plan Closure Form RM',link_fieldname='project_reference',group="Rowad")	
+    update_dashboard_link_for_core_doctype(doctype='Project',link_doctype='Project Closure Form RM',link_fieldname='project_reference',group="Rowad")	
